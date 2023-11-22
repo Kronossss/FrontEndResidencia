@@ -1,0 +1,33 @@
+img{
+    height: 145px;
+    width: 145px;
+}
+.amarelo{
+
+    color:rgb(244, 206, 21);
+    font-size: 30px ;
+}
+
+.azul{
+    font-family: 'Pacifico', cursive;
+    color:rgb(0, 68, 255);
+    font-size: 30px ;
+}
+
+.marron{
+    font-family: 'Pacifico', cursive;
+    color:rgb(234, 211, 187);
+    font-size: 30px ;
+}
+
+.vermelho{
+    font-family: 'Pacifico', cursive;
+    color:rgb(254, 0, 0);
+    font-size: 30px ;
+}
+
+.violeta{
+    font-family: 'Pacifico', cursive;
+    color:rgb(97, 12, 159);
+    font-size: 30px ;
+}

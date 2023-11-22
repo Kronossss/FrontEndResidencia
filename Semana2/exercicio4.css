@@ -1,0 +1,15 @@
+#caixa-externa{
+    border:20px solid purple;
+}
+
+.caixa{
+    background-color: blue;
+}
+.texto-branco{
+    color: white;
+    background-color: red;
+}
+
+p{
+    color: yellow;
+}

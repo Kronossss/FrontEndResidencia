@@ -1,0 +1,26 @@
+h3 {
+    font-family: 'Pacifico', cursive;
+    color:rgb(0, 0, 0);
+
+}
+
+.header-colored{
+    font-family: 'Pacifico', cursive;
+    color:rgb(255, 0, 0);
+    font-size: 30px ;
+    text-align: center;
+}
+
+.header-colored2{
+    font-family: 'Pacifico', cursive;
+    color:rgb(0, 0, 0);
+    font-size: 30px ;
+    text-align: center;
+}
+
+.header-colored3{
+    font-family: 'Pacifico', cursive;
+    color:rgb(18, 212, 34);
+    font-size: 30px ;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+h2 {
+    color:brown;
+    
+}
+
+h4{
+    font-weight: 800;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h5{
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    
+}
+h6{
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}

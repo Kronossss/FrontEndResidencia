@@ -1,0 +1,41 @@
+h2, h5{
+    color: goldenrod;
+}
+.Roupas{
+    font-family: 'Pacifico', cursive;
+    color:rgb(0, 68, 255);
+    font-size: 30px ;
+}
+
+li.usada{
+    font-family: 'Pacifico', cursive;
+    color:rgb(255, 0, 200);
+    font-size: 30px ;
+}
+
+.alimentos{
+    font-family: 'Pacifico', cursive;
+    color:rgb(0, 247, 255);
+    font-size: 30px ;
+}
+
+.caixas{
+    font-family: 'Pacifico', cursive;
+    color:rgb(97, 12, 159);
+    font-size: 30px ;
+}
+
+.moveis{
+    font-family: 'Pacifico', cursive;
+    color:rgb(21, 5, 247);
+    font-size: 30px ;
+}
+
+li{
+    font-family: 'Pacifico', cursive;
+    color:rgb(255, 8, 0);
+    font-size: 30px ;
+}
+.moveis>li.usada{
+    color:rgb(10, 255, 22)
+}
