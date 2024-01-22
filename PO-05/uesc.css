@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani&family=Roboto+Condensed&family=Ubuntu&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 20%;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.secao {
+    background-color: white;
+    color: #000;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border: 1px solid #9aafd1;
+    overflow: hidden;
+}
+
+.secao > .titulo {
+    margin: 0;
+    padding: 10px;
+    background-color: #9aafd1;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.secao > .bloco {
+    padding: 10px;
+    font-family: 'Biryani', sans-serif;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.servico .icone {
+    font-size: 3em;
+    margin-right: 15px;
+}
+
+.servico .informacoes {
+    text-align: center; 
+}
+
+
+#resultados {
+    grid-column: span 2;
+    width: 400px;
+}
+
+#destaque > .bloco {
+    display: inline-block;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bloco > img {
+    width: 100%;
+    height: auto;
+}
+
+.bloco ul {
+    padding: 0;
+}
+
+#menu li {
+    text-align: center;
+    list-style: none;
+    margin-bottom: 5px;
+    background-color: #2e688f;
+    color: #fff;
+    padding: 8px;
+    border: none;
+}
+
+#menu li:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    font-size: small;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+}
+
+footer > button {
+    background-color: #2e688f;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer > button:hover {
+    background-color: #2980b9;
+}
+
+@media screen and (max-width: 768px) {
+    .servico {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .servico .icone {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .secao > .bloco {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #resultados {
+        grid-column: auto;
+        width: auto;
+    }
+
+    .bloco > * {
+        margin-bottom: 10px; 
+    }
+
+    .secao > .bloco {
+        font-size: 0.8em;
+    }
+}
