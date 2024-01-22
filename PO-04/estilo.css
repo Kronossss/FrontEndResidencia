@@ -1,0 +1,86 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-destinos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.roteiros-viagens {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.roteiros-viagens img {
+    width: 100%;  /* Garante que a largura da imagem seja 100% do contêiner pai */
+    border-radius: 8px;  /* Adiciona borda arredondada às imagens */
+}
+
+.roteiro-destino {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.roteiro-incluso {
+    list-style-type: none;
+    padding: 0;
+}
+
+.roteiro-incluso li {
+    margin-bottom: 5px;
+}
+
+.roteiro-preco {
+    font-size: 24px;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+.roteiro-obs {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.roteiro-parcelamento {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.roteiro-comprar {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    /* Sombra inicial */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.roteiro-comprar:hover {
+    background-color: #2980b9;
+    color: #fff;
+    cursor: pointer;
+}
+
+.roteiro-comprar:active {
+    transform: scale(0.95);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .roteiros-viagens {
+        width: 100%;
+    }
+}
