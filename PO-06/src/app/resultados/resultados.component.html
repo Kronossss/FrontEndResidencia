@@ -1,0 +1,14 @@
+<section id="resultados" class="secao">
+  <div class="titulo">
+    <h2>RESULTADOS</h2>
+  </div>
+  <article class="bloco">
+    <div *ngFor="let noticia of noticias">
+      <p>
+        <strong>{{ noticia.title }}</strong><br />
+        {{ noticia.summary }}<br />
+        <a href="{{ noticia.url }}">Leia mais</a>
+      </p>
+    </div>
+  </article>
+</section>
