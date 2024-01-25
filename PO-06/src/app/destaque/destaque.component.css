@@ -1,0 +1,10 @@
+#destaque > .bloco {
+    display: inline-block;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bloco  img {
+    width: 100%;
+    height: 200px;
+}
