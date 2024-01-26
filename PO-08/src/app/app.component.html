@@ -1,0 +1,15 @@
+<div class="app-container">
+    <header>
+        <h1>Consulta ao a API da Wikipedia</h1>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <app-barra-busca (termoBuscaBarra)="termoBusca($event)"></app-barra-busca>
+        </div>
+
+        <article *ngIf="resultado" class="resultado-pesquisa" [class.mostrar]="resultado">
+            <app-resultado-pesquisa [termo]="termo" [artigos]="artigos"></app-resultado-pesquisa>
+        </article>
+    </main>
+</div>

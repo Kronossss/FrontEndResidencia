@@ -1,0 +1,7 @@
+<h2> Resultados para <span class="highlight">{{termo}}</span>: </h2>
+
+<article *ngFor="let artigo of artigos" class="artigo">
+    <h2>{{ artigo.title }}</h2>
+    <p [innerHTML]="artigo.snippet | realceTermo : termo"></p>
+    <a [href]="artigo.link" target="_blank">Leia mais...</a>
+</article>
