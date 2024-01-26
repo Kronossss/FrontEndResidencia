@@ -1,0 +1,7 @@
+<div class="propriedades mat-elevation-z2">
+  <h2 class="title">Propriedades</h2>
+  <div class="mat-list">
+    <app-valor-propriedade *ngFor="let propriedade of propriedades" [propriedade]="propriedade"
+      [valor]="veiculo[propriedade]"></app-valor-propriedade>
+  </div>
+</div>

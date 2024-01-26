@@ -1,0 +1,19 @@
+<div class="app-container">
+  <div class="sidebar mat-elevation-z2">
+    <app-classes [categorias]="categorias" (categoriaSelecionada)="selecionarCategoria($event)"></app-classes>
+
+    <app-carrinho [veiculosSelecionados]="veiculosSelecionados"
+      (veiculoRemovido)="removerVeiculoDoCarrinho($event)"></app-carrinho>
+  </div>
+
+  <div class="main-content">
+    <app-objetos *ngIf="categoriaSelecionada" [categoriaSelecionada]="categoriaSelecionada"
+      [veiculos]="veiculos[categoriaSelecionada]" (veiculoSelecionado)="selecionarVeiculo($event)"></app-objetos>
+
+    <app-propriedades *ngIf="veiculoSelecionado" [veiculo]="veiculoSelecionado"></app-propriedades>
+
+    <button mat-raised-button color="primary" class="add-to-cart" (click)="adicionarVeiculoAoCarrinho()">
+      Adicionar ao Carrinho
+    </button>
+  </div>
+</div>

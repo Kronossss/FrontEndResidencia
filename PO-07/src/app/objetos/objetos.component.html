@@ -1,0 +1,10 @@
+<div class="objetos mat-elevation-z2">
+  <h2 class="title">Veículos</h2>
+  <ul class="mat-list">
+    <li *ngFor="let veiculo of veiculos" class="mat-list-item">
+      <button mat-button (click)="selecionarVeiculo(veiculo)" appVeiculoEstilo [categoria]="categoriaSelecionada">
+        {{ veiculo.Name }} ({{ veiculo.Model }})
+      </button>
+    </li>
+  </ul>
+</div>

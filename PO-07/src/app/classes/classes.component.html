@@ -1,0 +1,12 @@
+<!-- classes.component.html -->
+
+<div class="classes mat-elevation-z2">
+  <h2 class="title">Categorias</h2>
+  <ul class="mat-list">
+    <li *ngFor="let categoria of categorias" class="mat-list-item">
+      <button mat-button (click)="selecionarCategoria(categoria)" appCategoriaEstilo [appCategoriaEstilo]="categoria">
+        {{ categoria }}
+      </button>
+    </li>
+  </ul>
+</div>

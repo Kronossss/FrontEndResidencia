@@ -1,0 +1,45 @@
+.carrinho {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.title {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mat-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mat-icon {
+  color: #757575;
+}
+
+.title mat-icon {
+  color: white;
+}
