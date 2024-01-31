@@ -1,0 +1,12 @@
+<div class="secao">
+    <div class="titulo">
+      <h2>Artigos</h2>
+    </div>
+    <article class="bloco">
+      <p *ngFor="let artigo of artigos">
+        <strong>{{ artigo.headline }}</strong><br>
+        <a [href]="'https://news.uark.edu/articles/' + artigo.id">{{ artigo.brief }}</a>
+      </p>
+    </article>
+  </div>
+  

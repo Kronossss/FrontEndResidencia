@@ -1,0 +1,13 @@
+<section id="destaque" class="secao">
+    <div class="titulo">
+      <h2>DESTAQUE</h2>
+    </div>
+    <article class="bloco">
+      <p *ngFor="let image of imagens | slice:0:2 ">
+      <ng-container *ngIf="image">
+          <img [src]="'https://campusdata.uark.edu/resources/images/articles/' + image"/>    
+      </ng-container> 
+      </p>
+    </article>
+  </section>
+  

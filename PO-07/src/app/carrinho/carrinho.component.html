@@ -1,0 +1,12 @@
+<div class="carrinho mat-elevation-z2">
+  <h2 class="title"> <mat-icon>shopping_cart</mat-icon> Carrinho
+  </h2>
+  <ul class="mat-list">
+    <li *ngFor="let veiculo of veiculosSelecionados; let i = index" class="mat-list-item">
+      {{ veiculo.Name }} ({{ veiculo.Model }})
+      <button mat-icon-button (click)="removerVeiculo(i)">
+        <mat-icon>clear</mat-icon>
+      </button>
+    </li>
+  </ul>
+</div>
