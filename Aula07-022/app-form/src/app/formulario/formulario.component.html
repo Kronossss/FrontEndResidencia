@@ -1,0 +1,25 @@
+<div class="container">
+    <form class="formComum" (ngSubmit)="onSubmit(formulario)" #formulario="ngForm">
+        <label>
+            ID:
+            <input name="id" ngModel>
+        </label>
+        <br>
+        <label>
+            Modelo:
+            <input name="modelo" ngModel>
+        </label>
+        <br>
+        <label>
+            Capacidade:
+            <input name="capacidade" ngModel>
+        </label>
+        <br>
+        <label>
+            Companhia Aérea:
+            <input name="companhia_aerea">
+        </label>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
