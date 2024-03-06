@@ -1,0 +1,43 @@
+<div class="listContainer">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Lista de Atendimento</mat-card-title>
+            <mat-icon mat-card-avatar>list</mat-icon>
+        </mat-card-header>
+        <mat-card-content>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nome do Cliente</th>
+                        <th>Nome do Pet</th>
+                        <th>Espécie</th>
+                        <th>Idade</th>
+                        <th>Identificação</th>
+                        <th>Data do Atendimento</th>
+                        <th>Tipo de Atendimento</th>
+                        <th>Valor</th>
+                        <th>Observações</th>
+                        <th>Editar</th>
+                        <th>Detalhar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let atendimento of atendimentos">
+                        <td>{{ atendimento.nomeCliente }}</td>
+                        <td>{{ atendimento.nomePet }}</td>
+                        <td>{{ atendimento.especie }}</td>
+                        <td>{{ atendimento.idade }}</td>
+                        <td>{{ atendimento.ident }}</td>
+                        <td>{{ atendimento.dataAtendimento }}</td>
+                        <td>{{ atendimento.tipoAtendimento }}</td>
+                        <td>{{ atendimento.valor }}</td>
+                        <td>{{ atendimento.observacoes }}</td>
+                        <td><button mat-raised-button color="primary" type="button" routerLink="/edicao/{{atendimento.id}}">Editar</button></td>
+                        <td><button mat-raised-button color="accent" type="button" routerLink="/detalhamento/{{atendimento.id}}">Detalhar</button></td>                   
+                    </tr>
+                </tbody>
+            </table>
+
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,49 @@
+<div class="detailsContainer">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Detalhes do Atendimento</mat-card-title>
+            <mat-icon mat-card-avatar>assignment</mat-icon>
+        </mat-card-header>
+        <mat-card-content *ngIf="atendimento">
+            <table class="table table-bordered">
+                <tr>
+                    <th>Nome do Cliente</th>
+                    <td>{{ atendimento.nomeCliente }}</td>
+                </tr>
+                <tr>
+                    <th>Nome do Pet</th>
+                    <td>{{ atendimento.nomePet }}</td>
+                </tr>
+                <tr>
+                    <th>Espécie</th>
+                    <td>{{ atendimento.especie }}</td>
+                </tr>
+                <tr>
+                    <th>Idade</th>
+                    <td>{{ atendimento.idade }}</td>
+                </tr>
+                <tr>
+                    <th>Identificação</th>
+                    <td>{{ atendimento.ident }}</td>
+                </tr>
+                <tr>
+                    <th>Data do Atendimento</th>
+                    <td>{{ atendimento.dataAtendimento }}</td>
+                </tr>
+                <tr>
+                    <th>Tipo de Atendimento</th>
+                    <td>{{ atendimento.tipoAtendimento }}</td>
+                </tr>
+                <tr>
+                    <th>Valor</th>
+                    <td>{{ atendimento.valor }}</td>
+                </tr>
+                <tr>
+                    <th>Observações</th>
+                    <td>{{ atendimento.observacoes }}</td>
+                </tr>
+            </table>
+            <button mat-raised-button color="primary" routerLink="/listagem">Voltar para Lista</button>
+        </mat-card-content>
+    </mat-card>
+</div>

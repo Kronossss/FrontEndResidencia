@@ -1,0 +1,57 @@
+.container {
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  mat-card-header {
+    background-color: #007bff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+  }
+  
+  mat-card-title {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  mat-icon {
+    font-size: 24px;
+    margin-left: 8px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-danger {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .form-label {
+    font-weight: bold; 
+  }
+  
+  .form-control {
+    border-radius: 5px; 
+  }
+  
+
+  .text-danger {
+    color: #dc3545; 
+    margin-top: 10px;
+  }
+  
+  .text-success {
+    color: #28a745; 
+    margin-bottom: 10px;
+  }
+  
+
+  

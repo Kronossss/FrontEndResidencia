@@ -1,0 +1,32 @@
+mat-card {
+    padding: 30px;
+}
+
+mat-card-header {
+    background-color: grey;
+    color: white;
+    border-radius: 4px 4px 0 0;
+    mat-card-title {
+        font-size: 24px !important;
+        font-weight: 100 !important;
+        margin: 8px 0px !important;
+    }
+}
+
+mat-card-content {
+    padding: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+mat-form-field, button {
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+}
